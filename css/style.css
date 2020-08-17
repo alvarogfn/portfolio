@@ -5,17 +5,12 @@
     font-family: Gamer;
     src: url(Fonts/Gamer.otf);
 
-    font-family: DoHyeon;
-    src: url(Fonts/DoHyeon-Regular.otf);
-    
-    font-family: Josefin;
-    src: url(Fonts/JosefinSans-VariableFont_wght.otf);
-
     font-family: "Sadana Square";
     src: url(Fonts/SadanaSquare.otf);
 
     font-family: Alata;
     src: url(Fonts/Alata-Regular.otf);
+
 }
 
 /* modificações gerais */
@@ -24,19 +19,19 @@
     text-decoration: none;
     list-style: none;
     color: white;
-    text-shadow: 2px 2px 1px black;
 }
 
 body {
     background-color: #1b1b1b;
 }
 
-/* cabecalho */
-
-header#principal {
+div#corpo {
     width: 85%;
     margin: 0 auto;
 }
+
+/* cabecalho */
+
 
 header#principal div#container-menu {
     border-right: 4px solid white;
@@ -52,6 +47,7 @@ header#principal div#container-menu {
 div#container-menu div#logo {
     margin: 0 1vw ;
     line-height: 4vw;
+    text-shadow: 2px 2px 1px black;
 }
 
 div#container-menu h1 {
@@ -60,16 +56,17 @@ div#container-menu h1 {
     text-transform: uppercase;
 }
 
-div#container-menu span {
-    font-family: "Alata", sans-serif;
-    font-size: 2vw;
+div#container-menu h2 {
+    font-family: "Sadana Square", sans-serif;
+    font-size: 3vw;
     letter-spacing: 0.3vw;
 }
 
 /* REDES SOCIAIS */
 
 div#container-menu div#redes-sociais {
-    font-family: "Sadana Square";
+    font-family: Alata;
+    
     width: 40%;
 
     display: flex;
@@ -88,14 +85,14 @@ div#redes-sociais ul {
 
 div#redes-sociais li {
     padding: 0 2vw;
-    font-size: 1.9vw;
+    font-size: 1vw;
     letter-spacing: 0.2vw;
     line-height: 2vw;
 }
 
 div#redes-sociais li:nth-child(even) {
-    border-right: 0.3vw solid white;
-    border-left: 0.3vw solid white;
+    border-right: 0.1vw solid white;
+    border-left: 0.1vw solid white;
 }
 
 div#redes-sociais a {
@@ -130,9 +127,9 @@ div#menu-principal ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 2vw;
-    font-family: "Sadana Square";
-    line-height: 2vw;
+    font-size: 1.1vw;
+    font-family: Alata;
+    line-height: 2.4vw;
     transition: 0.4s;
 }
 
@@ -140,7 +137,117 @@ div#menu-principal ul {
 
 
 div#menu-principal:hover ul {
-    line-height: 4vw;
-    font-size: 2.5vw;
+    line-height: 3vw;
+    font-size: 1.5vw;
 }
 
+
+/* CORPO */
+
+main#corpo {
+    width: 90%;
+    margin: 1vw auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+main#corpo h3{
+    text-indent: 1vw;
+    font-size: 3vw;
+    font-family: "Sadana Square";
+
+    z-index: 1;
+}
+
+/* Cabecalho da seção projeto */
+
+    main#corpo .header-projetos h4 {
+        display: inline-block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.2vw;
+        margin: 7px 10px;
+        text-transform: uppercase;
+        border-bottom: 2px solid white;
+        padding: 2px;
+    }
+
+    main#corpo .header-projetos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* conteudo da seção projeto */
+
+    main#corpo .projetos {
+        display: flex;
+        margin-bottom: 1vw;
+    }
+
+    main#corpo .container-projeto {
+        border: 4px solid white;
+        padding: 0.5vw;
+    }
+
+    main#corpo .container-conteudo-projeto {
+        display: flex;
+    }
+
+    main#corpo .container-conteudo-projeto p {
+        font-family: monospace;
+        margin: 1vw 1.5vw;
+        text-align: justify;
+        font-size: 1.2vw;
+    }
+
+    main#corpo .container-projeto img {
+        width: 30%;
+        border: 4px solid white;
+    }
+
+/* rodapé da seção projetos */
+
+    main#corpo .footer-projetos {
+        float: right;
+        margin-top: -1.5vw;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    main#corpo .footer-projetos p {
+        font-family: "Sadana Square", sans-serif;
+        text-transform: uppercase;
+        
+        padding: 5px;
+        color: black;
+    }
+
+/* seção habilidade do main projetos */
+
+    main#corpo .container-habilidade {
+        width: 80%;
+        padding: 1vw;
+    }
+
+    main#corpo .container-habilidade table {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.5vw;
+        border: 4px solid white;
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    main#corpo .container-habilidade table td {
+        border: 1px solid white;
+        padding: 1vw;
+        vertical-align: middle;
+    }
+
+    main#corpo .container-habilidade table td#linguagem {
+        border: 4px solid white;
+        padding: 1vw;
+        vertical-align: middle;
+    }
