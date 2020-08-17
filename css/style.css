@@ -1,77 +1,146 @@
 @charset "UTF-8";
 
 /* fontes */
+@font-face {
+    font-family: Gamer;
+    src: url(Fonts/Gamer.otf);
 
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Do+Hyeon&family=Josefin+Sans:wght@300&family=Ubuntu&display=swap');
+    font-family: DoHyeon;
+    src: url(Fonts/DoHyeon-Regular.otf);
+    
+    font-family: Josefin;
+    src: url(Fonts/JosefinSans-VariableFont_wght.otf);
 
-/* 
-    font-family: 'Alata', sans-serif;
-    font-family: 'Do Hyeon', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Ubuntu', sans-serif; 
-*/
+    font-family: "Sadana Square";
+    src: url(Fonts/SadanaSquare.otf);
+
+    font-family: Alata;
+    src: url(Fonts/Alata-Regular.otf);
+}
+
+/* modificações gerais */
 
 * {
     text-decoration: none;
     list-style: none;
     color: white;
+    text-shadow: 2px 2px 1px black;
 }
 
-
-/* modificações gerais */
-
 body {
-    background-color: #111111;
+    background-color: #1b1b1b;
 }
 
 /* cabecalho */
 
 header#principal {
-    border: 0.3vw solid white;
-    border-top: none;
     width: 85%;
     margin: 0 auto;
+}
+
+header#principal div#container-menu {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+
     display: flex;
     justify-content: space-between;
 }
 
-/* logo */
+/* LOGO MENU */
 
-header#principal #logo {
-    padding: 0px 1vw 0.5vw 1vw;
+div#container-menu div#logo {
+    margin: 0 1vw ;
+    line-height: 4vw;
 }
 
-header#principal #logo h1 {
-    font-size: 4vw;
-    font-family: 'Do Hyeon', sans-serif;
-    margin-bottom: 0.1vw;
+div#container-menu h1 {
+    font-family: "Gamer", sans-serif;
+    font-size: 9vw;
+    text-transform: uppercase;
 }
 
-header#principal #logo span{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5vw;
+div#container-menu span {
+    font-family: "Alata", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.3vw;
+}
+
+/* REDES SOCIAIS */
+
+div#container-menu div#redes-sociais {
+    font-family: "Sadana Square";
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#redes-sociais nav {
+    width: 100%;
+}
+
+div#redes-sociais ul {
+    display: flex;
+    justify-content: center;
+}
+
+div#redes-sociais li {
+    padding: 0 2vw;
+    font-size: 1.9vw;
+    letter-spacing: 0.2vw;
+    line-height: 2vw;
+}
+
+div#redes-sociais li:nth-child(even) {
+    border-right: 0.3vw solid white;
+    border-left: 0.3vw solid white;
+}
+
+div#redes-sociais a {
+    padding: 0 5%;
+}
+
+div#redes-sociais a:hover {
+    border-bottom: 0.1vw solid white;
+    transition: 0.5s;
 }
 
 /* menu de navegação */
 
-nav {
+header#principal div#menu-principal {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    width: 40%;
+    margin-left: 1%;
+
     display: flex;
-    align-items: center;
-    margin: 2vw 4.5vw;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.2vw;
+div#menu-principal nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li a {
-    margin: 2vw;
-    padding-bottom: 5px;
+div#menu-principal ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+    font-family: "Sadana Square";
+    line-height: 2vw;
+    transition: 0.4s;
 }
 
-nav ul li a:hover {
-    border-bottom: 1px solid white;
-    transition: 0.2s;
+/* ANIMAÇÃO NAVEGAÇÃO */
+
+
+div#menu-principal:hover ul {
+    line-height: 4vw;
+    font-size: 2.5vw;
 }
+
