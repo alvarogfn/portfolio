@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page icon -->
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
     <title>Kasoke</title>
     <!-- Reset CSS -->
     <link rel="stylesheet" href="css/reset.css">
-
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" media="(min-width: 900px)">
 </head>
 <body>
-    <div id="corpo"> <!-- // Pagina -->
-        <header id="principal"> <!-- // Cabeçalho -->
+    <div id="corpo"> <!-- \\ Pagina -->
+        <header id="principal"> <!-- \\ Cabeçalho -->
             <div id="container-menu">
                 <div id="logo"> <!-- // Logo -->
                     <h1>
@@ -34,47 +35,78 @@
             <div id="menu-principal">
                 <nav>
                     <ul>
-                        <li><a href="">Projetos</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#sessao-about">Sobre</a></li>
+                        <li><a href="#sessao-projetos">Projetos</a></li>
+                        <li><a href="#sessao-contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
-        </header> <!-- Cabeçalho \\ -->
+        </header> <!-- Cabeçalho // -->
         
-        <main id="corpo">
-            <h3>Projetos</h3>
-            <div class="projetos">
-                
-                <div class="container-projeto">
-                    <header class="header-projetos">
-                        <h4>Bot Twitter</h4>
-                        <span>06 - 07 - 2020 </span>
+        <main id="corpo"> <!--\\ Corpo -->
+            <div>
+                <h3>Sobre mim</h3>
+                <article id="sessao-about"><!-- \\ Sobre -->
+                    <header>
+
                     </header>
-                    <div class="container-conteudo-projeto">
-                        <img src="imagens/twiiter.png" alt="twiiter">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam asperiores dicta nobis incidunt dolorum temporibus a impedit dolore error, magnam hic fugit consectetur distinctio laudantium esse quis assumenda! Consequuntur, odit.
-                        </p>
-                    </div>
-                    <footer class="footer-projetos">
-                        <p>Ver código fonte no GitHub</p>
+                    <article>
+
+                    </article>
+                    <footer>
+
                     </footer>
-                </div>
-                
-                <div class="container-habilidade">
-                    <h3>Habilidades</h3>
-                    <table>
-                        <tr>
-                            <td id="linguagem">Python</td>
-                            <td>Tweepy</td>
-                        </tr>
-                    </table>
-                </div>
+                </article><!-- \\ Sobre -->
             </div>
-        </main>
+            <div>
+                <h3>Projetos</h3>
+                <article id="sessao-projetos"><!-- \\ Projetos -->
+                    <section>
+                        <article class="container-projeto"> <!-- \\ ProjetoInfo -->
+                            <header>
+                                <h4>Bot Twitter</h4>
+                                <span>Projeto feito em Julho de 2020 </span>
+                            </header>
+                            <section>
+                                <img src="imagens/twiiter.png" alt="twiiter">
+                                <p>
+                                    Um bot no twitter que retweeta e curte tudo que contém a palavra "dattebayo".Um bot no twitter que retweeta e curte tudo que contém a palavra "dattebayo".
+                                </p>
+                            </section>
+                            <footer>
+                                <a href="https://github.com/alvarogfn/KasokeBot" target="_blank">
+                                    <p>Ver código fonte no GitHub</p>
+                                </a>
+                                <a href="https://twitter.com/bot_bayo" target="_blank">
+                                    <p>Ver projeto</p>
+                                </a>
+                            </footer>
+                        </article> <!-- ProjetoInfo //-->
+                        
+                        <aside class="container-habilidade"> <!-- \\ Habilidades -->
+                            <h3>Feito com :</h3>
+                            <table>
+                                <tr>
+                                    <td id="linguagem">Python</td>
+                                    <td><a href="https://www.tweepy.org" target="_blank">Tweepy</a></td>
+                                </tr>
+                            </table> 
+                        </aside> <!-- Habilidades // -->
+                    </section>
+                
+                    <!-------------------- [ Inserir novos projetos abaixo ] ------------------------------>
+
+                </article> <!-- Projetos // -->
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <article id="sessao-contato"> <!-- \\ Contato -->
+
+                </article> <!-- Contato //-->
+            </div>
+        </main> <!-- Corpo // -->
         
-    </div> <!-- Pagina \\ -->
+    </div> <!-- Pagina // -->
 </body>
 </html>
 

@@ -141,15 +141,11 @@ div#menu-principal:hover ul {
     font-size: 1.5vw;
 }
 
-
-/* CORPO */
+/* MODIFICAÇÕES GERAIS DO CORPO */
 
 main#corpo {
     width: 90%;
     margin: 1vw auto;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
 }
 
 main#corpo h3{
@@ -157,80 +153,124 @@ main#corpo h3{
     font-size: 3vw;
     font-family: "Sadana Square";
 
-    z-index: 1;
 }
 
-/* Cabecalho da seção projeto */
+/* main */
+main#corpo > div {
+    margin-bottom: 80px;
+}
 
-    main#corpo .header-projetos h4 {
+
+/******************** sessao about ***********************/
+/* cabecalho da sessao about */
+
+
+/******************** sessao projeto ***********************/
+/* Cabecalho da sessao projeto */
+
+    article#sessao-projetos {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    article#sessao-projetos .container-projeto header h4 {
         display: inline-block;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
         letter-spacing: 0.2vw;
-        margin: 7px 10px;
+        margin: 0.7vw 1vw;
+        font-size: 1.8vw;
         text-transform: uppercase;
         border-bottom: 2px solid white;
-        padding: 2px;
+        padding: 0.2vw;
     }
 
-    main#corpo .header-projetos {
+    article#sessao-projetos .container-projeto header {
         display: flex;
         justify-content: space-between;
     }
 
-/* conteudo da seção projeto */
+    article#sessao-projetos .container-projeto header span {
+        font-size: 1vw;
+    }
 
-    main#corpo .projetos {
+/* conteudo da sessão projeto */
+
+    article#sessao-projetos section {
         display: flex;
         margin-bottom: 1vw;
     }
 
-    main#corpo .container-projeto {
+    article#sessao-projetos section .container-projeto {
         border: 4px solid white;
         padding: 0.5vw;
     }
 
-    main#corpo .container-conteudo-projeto {
+    article#sessao-projetos .container-projeto section {
         display: flex;
     }
 
-    main#corpo .container-conteudo-projeto p {
+    article#sessao-projetos .container-projeto p {
         font-family: monospace;
         margin: 1vw 1.5vw;
         text-align: justify;
-        font-size: 1.2vw;
+        font-size: 1.3vw;
     }
 
-    main#corpo .container-projeto img {
+    article#sessao-projetos .container-projeto section img {
         width: 30%;
         border: 4px solid white;
+        transition: 0.5s;
     }
 
-/* rodapé da seção projetos */
+    /* Animação da imagem da sessao projeto */
+    article#sessao-projetos .container-projeto section img:hover {
+        transform: scale(1.5);   
+    }
+        
 
-    main#corpo .footer-projetos {
-        float: right;
-        margin-top: -1.5vw;
+/* rodapé da sessão projetos */
+
+    article#sessao-projetos .container-projeto footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    article#sessao-projetos .container-projeto a {
+        margin-top: -3.5vw;
         background-color: white;
         border-radius: 5px;
+        border: 1px solid #1b1b1b;
     }
 
-    main#corpo .footer-projetos p {
+    article#sessao-projetos .container-projeto a p {
         font-family: "Sadana Square", sans-serif;
         text-transform: uppercase;
-        
-        padding: 5px;
         color: black;
+        font-size: 1.5vw;
     }
 
-/* seção habilidade do main projetos */
+    /* animações do rodapé da sessao projetos */
 
-    main#corpo .container-habilidade {
-        width: 80%;
+        article#sessao-projetos .container-projeto a:hover {
+            background: #1b1b1b;
+            border: 1px solid white;
+            transition: 0.2s;
+        }
+
+        article#sessao-projetos .container-projeto a:hover p {
+            color: white;
+        }
+
+/* sessão habilidade do main projetos */
+
+    article#sessao-projetos .container-habilidade {
+        max-width: 30%;
         padding: 1vw;
     }
 
-    main#corpo .container-habilidade table {
+    article#sessao-projetos .container-habilidade table {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
         font-size: 1.5vw;
@@ -240,13 +280,13 @@ main#corpo h3{
         justify-content: center;
     }
 
-    main#corpo .container-habilidade table td {
+    article#sessao-projetos .container-habilidade table td {
         border: 1px solid white;
         padding: 1vw;
         vertical-align: middle;
     }
 
-    main#corpo .container-habilidade table td#linguagem {
+    article#sessao-projetos .container-habilidade table td#linguagem {
         border: 4px solid white;
         padding: 1vw;
         vertical-align: middle;
