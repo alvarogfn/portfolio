@@ -65,7 +65,7 @@ div.break {
 }
 
 .break span {
-    font-family: 'Cute Font', fantasy;
+    font-family: 'Cute Font', 'Ubuntu', sans-serif;
 
     margin-top: 45vh;
 
