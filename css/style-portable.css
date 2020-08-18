@@ -1,17 +1,13 @@
 @charset "UTF-8";
 
 /* fontes */
-@font-face {
-    font-family: Gamer;
-    src: url(Fonts/Gamer.otf);
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Major+Mono+Display&family=Ubuntu&display=swap');
 
-    font-family: "Sadana Square";
-    src: url(Fonts/SadanaSquare.otf);
-
-    font-family: Alata;
-    src: url(Fonts/Alata-Regular.otf);
-
-}
+/* 
+font-family: 'Cute Font', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Ubuntu', sans-serif;
+*/
 
 /* modificações gerais */
 
@@ -19,28 +15,60 @@
     text-decoration: none;
     list-style: none;
     color: white;
-    background-color: #1b1b1b;
+}
+
+/* limpar config */
+div#corpo {
+    display: none;
+}
+
+
+html {
+    background-image: url(../imagens/giphybreak.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body {
-    display: flex;
-    
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 7vw;
-    text-transform: uppercase;
-    font-family: "Gamer";
-    letter-spacing: 1vw;
-    margin: 0 auto;
-    width: 80%;
 }
 
-div#corpo {
-    width: 85%;
-    margin: 0 auto;
-    display: none;
+div.break {
+    margin-top: 10vh;
+
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+
+    padding: 1vw;
+}
+
+.break h1, span {
+    font-size: 5vw;
+    letter-spacing: 1.2vw;
+}
+
+
+.break h1 {
+    text-transform: uppercase;
+    text-align: center;
+
+    line-height: 6vw;
+
+    font-family: fantasy;
+    font-size: 1.5em;
+}
+
+.break span {
+    font-family: 'Cute Font', fantasy;
+
+    margin-top: 45vh;
+
+    display: flex;
+    align-self: flex-end;
 }

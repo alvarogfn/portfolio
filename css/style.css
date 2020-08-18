@@ -1,16 +1,31 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Major+Mono+Display&family=Ubuntu&display=swap');
+
+/* 
+font-family: 'Cute Font', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 /* fontes */
 @font-face {
-    font-family: Gamer;
-    src: url(Fonts/Gamer.otf);
+    font-family: "Gamer";
+    src: url("./fonts/Gamer.woff") format("woff"),
+    url("./fonts/Gamer.woff2") format("woff2");
+    
+}
 
+@font-face {
     font-family: "Sadana Square";
-    src: url(Fonts/SadanaSquare.otf);
+    src: url("fonts/SadanaSquare.woff") format("woff"),
+    url("./fonts/SadanaSquare.woff2") format("woff2");
+}
 
-    font-family: Alata;
-    src: url(Fonts/Alata-Regular.otf);
-
+@font-face {
+    font-family: "Alata";
+    src: url("fonts/Alata-Regular.woff") format("woff"),
+    url("./fonts/Alata-Regular.woff2") format("woff2");
 }
 
 /* modificações gerais */
@@ -25,7 +40,7 @@ body {
     background-color: #1b1b1b;
 }
 
-body > h1 {
+div.break {
     display: none;
 }
 
@@ -55,13 +70,13 @@ div#container-menu div#logo {
 }
 
 div#container-menu h1 {
-    font-family: "Gamer", sans-serif;
-    font-size: 9vw;
+    font-family:  "Major Mono Display", "gamer", monospace;
+    font-size: 5vw;
     text-transform: uppercase;
 }
 
 div#container-menu h2 {
-    font-family: "Sadana Square", sans-serif;
+    font-family: "Cute Font", "Sadana Square", monospace;
     font-size: 3vw;
     letter-spacing: 0.3vw;
 }
@@ -69,7 +84,7 @@ div#container-menu h2 {
 /* REDES SOCIAIS */
 
 div#container-menu div#redes-sociais {
-    font-family: Alata;
+    font-family: "Ubuntu", Alata, sans-serif;
     
     width: 40%;
 
@@ -132,7 +147,7 @@ div#menu-principal ul {
     display: flex;
     justify-content: space-between;
     font-size: 1.1vw;
-    font-family: Alata;
+    font-family: "Ubuntu", Alata, sans-serif;
     line-height: 2.4vw;
     transition: 0.4s;
 }
@@ -155,7 +170,7 @@ main#corpo {
 main#corpo h3{
     text-indent: 1vw;
     font-size: 3vw;
-    font-family: "Sadana Square";
+    font-family: "Cute Font", "Sadana Square", monospace;
 
 }
 
@@ -200,7 +215,7 @@ article#sessao-about {
 
     article#sessao-about article > h4 {
         font-size: 2.5vw;
-        font-family: "Sadana Square";
+        font-family: "Cute Font", "Sadana Square", monospace;
     }
 
     /* certificados */
@@ -209,7 +224,7 @@ article#sessao-about {
         padding: 1vw;
         margin: 0.1vw;
         font-size: 1.5vw;
-        font-family: Alata;
+        font-family: "Ubuntu", Alata, sans-serif;
     }
 
     article#sessao-about section .certificado-info {
@@ -314,7 +329,7 @@ article#sessao-about {
     }
 
     article#sessao-projetos .container-projeto a p {
-        font-family: "Sadana Square", sans-serif;
+        font-family: "Cute Font", "Sadana Square", monospace;
         text-transform: uppercase;
         color: black;
         font-size: 1.5vw;
@@ -380,7 +395,7 @@ article#sessao-contato table td {
     vertical-align: middle;
     text-align: center;
     padding: 1vw;
-    font-family: monospace;
+    font-family: ubuntu, monospace;
     font-size: 1.2vw;
 }
 
