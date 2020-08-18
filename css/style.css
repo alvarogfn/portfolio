@@ -202,7 +202,6 @@ article#sessao-about {
     /* certificados */
 
     article#sessao-about section.certificado {
-        border: 2px solid white;
         padding: 1vw;
         margin: 0.1vw;
         font-size: 1.5vw;
@@ -357,3 +356,42 @@ article#sessao-about {
         padding: 1vw;
         vertical-align: middle;
     }
+
+/******************** sessao contato ***********************/
+article#sessao-contato {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* contato email */
+
+article#sessao-contato table {
+    border: 4px solid white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+article#sessao-contato table td {
+    border: 1px solid white;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1vw;
+    font-family: monospace;
+    font-size: 1.2vw;
+}
+
+article#sessao-contato table td.table-title {
+    background-color: white;
+    color: black;
+    text-align: right;
+    padding-left: 0;
+}
+
+article#sessao-contato table td.table-data {
+    padding: 1vw 8vw;
+}
+
+article#sessao-contato table td.table-data a:hover {
+    color: black;
+    transition: 0.2s;
+}
