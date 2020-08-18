@@ -24,7 +24,8 @@ div#corpo {
 
 
 html {
-    background-image: url(../imagens/giphybreak.gif);
+    background-image: url(../imagens/background-mobile.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -45,30 +46,58 @@ div.break {
     align-self: center;
     flex-direction: column;
 
+    letter-spacing: 1vw;
+    
     padding: 1vw;
 }
 
 .break h1, span {
     font-size: 5vw;
-    letter-spacing: 1.2vw;
 }
 
+.break h1, .break h2, .break h3 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.7em;
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: 5px;
+}
+
+.break h2, .break h3 {
+    
+    margin: 1vw auto;
+    padding: 1vw;
+}
 
 .break h1 {
-    text-transform: uppercase;
-    text-align: center;
+    margin: 2vw;
+    padding: 2vw;
+}
 
-    line-height: 6vw;
+.break h2 {
+    width: 80%;
+}
 
-    font-family: fantasy;
-    font-size: 1.5em;
+.break h3 {
+    width: 50%;
 }
 
 .break span {
-    font-family: 'Cute Font', 'Ubuntu', sans-serif;
 
-    margin-top: 45vh;
+    margin-top: 30vh;
 
+    font-family:  'Cute Font', cursive;
+    font-size: 1.7em;
+
+    text-align: right;
+    
     display: flex;
     align-self: flex-end;
 }
