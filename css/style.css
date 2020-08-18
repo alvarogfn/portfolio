@@ -213,18 +213,23 @@ article#sessao-about {
         border-radius: 5px;
     }
 
-    article#sessao-about article > h4 {
+    article#sessao-about article h4 {
         font-size: 2.5vw;
         font-family: "Cute Font", "Sadana Square", monospace;
     }
 
     /* certificados */
 
-    article#sessao-about section.certificado {
+
+    article#sessao-about section {
         padding: 1vw;
         margin: 0.1vw;
         font-size: 1.5vw;
         font-family: "Ubuntu", Alata, sans-serif;
+    }
+
+    article#sessao-about section h5 {
+        margin: 0.5vw 0;
     }
 
     article#sessao-about section .certificado-info {
@@ -237,17 +242,68 @@ article#sessao-about {
         padding: 1vw 0;
         margin-left: 1.5vw;
         
-    }
-
-    article#sessao-about section .certificado-info ul > ul {
-        text-indent: 0.1vw;
-    }
+    }   
 
     article#sessao-about section .certificado-info li {
         list-style-type: square;
+        width: max-content;
+        margin: 0.5vw;
     }
 
-    
+    /* sessao about animações */
+
+        /* tags a serem animadas */ 
+        span.certificado-emitido, span.certificado-n-emitido, span.certificado-andamento {
+            font-family: monospace;
+            font-size: 0.7em;
+            margin-left: 3vw;
+        }
+
+        span.certificado-emitido {
+            color: green;
+        }
+        span.certificado-n-emitido {
+            color: rgba(0, 0, 0, 0.541);
+        }
+
+        span.certificado-andamento {
+            color: rgb(153, 0, 255);
+        }
+
+        article#sessao-about section .certificado-info span {
+            display: none;
+            text-transform: uppercase;
+        }
+
+        article#sessao-about section .certificado-info a {
+            cursor: pointer;
+        }
+
+        /* animações */
+
+        article#sessao-about section .certificado-info:hover {
+            background-color: white;
+            transition: 0.2s;
+        }
+
+        article#sessao-about section .certificado-info:hover li, .certificado-info:hover a {
+            color: black;
+        }
+
+        article#sessao-about section .certificado-info li:hover {
+            list-style-type: disc;
+            transition: 0.1s;
+        }
+
+        article#sessao-about section .certificado-info a:hover {
+            margin-left: 0.5vw;
+        }
+
+        article#sessao-about section .certificado-info a:hover + span {
+            display: inline;
+        }
+
+
 
 /******************** sessao projeto ***********************/
 /* Cabecalho da sessao projeto */
