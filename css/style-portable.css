@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* fontes */
+@font-face {
+    font-family: Gamer;
+    src: url(Fonts/Gamer.otf);
+
+    font-family: "Sadana Square";
+    src: url(Fonts/SadanaSquare.otf);
+
+    font-family: Alata;
+    src: url(Fonts/Alata-Regular.otf);
+
+}
+
+/* modificações gerais */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: #1b1b1b;
+}
+
+body {
+    display: flex;
+    
+    width: 100%;
+    height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: "Gamer";
+    letter-spacing: 1vw;
+    margin: 0 auto;
+    width: 80%;
+}
+
+div#corpo {
+    width: 85%;
+    margin: 0 auto;
+    display: none;
+}

@@ -25,6 +25,10 @@ body {
     background-color: #1b1b1b;
 }
 
+body > h1 {
+    display: none;
+}
+
 div#corpo {
     width: 85%;
     margin: 0 auto;
