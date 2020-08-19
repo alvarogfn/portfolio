@@ -98,3 +98,7 @@ div.break {
     display: flex;
     align-self: flex-end;
 }
+
+footer#rodape-pagina {
+    display: none;
+}
