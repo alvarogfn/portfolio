@@ -218,6 +218,26 @@ article#sessao-about {
         font-family: "Cute Font", "Sadana Square", monospace;
     }
 
+    /* cabecalho de categorias */
+        article#sessao-about header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        article#sessao-about header span {
+            font-size: 0.9vw;
+        }
+    
+    /* rodapé das categorias */
+
+        article#sessao-about footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1vw;
+            
+        }
+
     /* faculdade */
 
     article#sessao-about #faculdade section {
@@ -227,8 +247,8 @@ article#sessao-about {
 
     /* table na sessao about faculdade */
     article#sessao-about #faculdade section table {
-        display: flex;
-        justify-content: center;
+        border: 1px solid red;
+        width: 100%;
         font-size: 1vw;
     }
 
@@ -236,50 +256,44 @@ article#sessao-about {
         text-transform: uppercase;
         vertical-align: middle;
         text-align: center;
-        padding: 0.7vw 2vw;
+        padding: 1.5vw 2vw;
         font-size: 1.5vw;
         border: 1px solid white;
         align-items: center;
     }
 
-    article#sessao-about #faculdade section table tr:not(#info-tabela) td {
-        padding: 0.6vw 1.8vw;
+    article#sessao-about #faculdade section tr:not(#info-tabela) td {
+        padding: 1vw 1.8vw;
         font-size: 1.3vw;
     }
 
-    article#sessao-about section td#progresso div {
+    /* rodape xp faculdade */
+    article#sessao-about #faculdade footer h6 {
+        font-family: monospace;
+        text-transform: uppercase;
+    }
+
+    article#sessao-about #faculdade footer div {
+        width: 100%;
+        margin-left: 1vw;
         text-align: right;
-        padding: 0.4vw;
+        background-image: linear-gradient(to right, white 10%, #00000000 10%);
     }
 
-    article#sessao-about section td#progresso div {
-        height: max-content;
-        background-image: linear-gradient(to right, white 12.5%, rgba(0, 0, 0, 0) 12.5%);
+    article#sessao-about #faculdade footer span {
+        color: #ffffff00;
+        font-size: 1vw;
     }
 
-    td#progresso div span {
-        color: rgba(0, 0, 0, 0);
-    }
+        /* rodape xp faculdade hover */
 
-    /* table faculdade animation */
-
-        article#sessao-about #faculdade section table td#progresso div:hover span {
-            color: rgba(255, 255, 255, 1);
-            transition: 0.1s;
+        article#sessao-about #faculdade footer div:hover span {
+            color: #ffffff9a;
         }
 
     /* trabalho */
 
-    #trabalho header {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #trabalho header span {
-        font-size: 0.9vw;
-    }
-
-    #progress-bar {
+    #trabalho #progress-bar {
         background-image: linear-gradient(to right, white 0, rgba(0, 0, 0, 0) 0);
         text-align: center;
         font-size: 0.9vw;
@@ -287,11 +301,11 @@ article#sessao-about {
         justify-content: space-between;
     }
 
-    #progress-bar span {
+    #trabalho #progress-bar span {
         color: #ffffff00
     }
 
-    #progress-bar:hover span {
+    #trabalho #progress-bar:hover span {
         color: #ffffff8c;
     }
 
