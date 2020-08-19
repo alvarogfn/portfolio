@@ -218,6 +218,58 @@ article#sessao-about {
         font-family: "Cute Font", "Sadana Square", monospace;
     }
 
+    /* faculdade */
+
+    article#sessao-about #faculdade section {
+        margin: 0 auto;
+        font-family: monospace;
+    }
+
+    /* table na sessao about faculdade */
+    article#sessao-about #faculdade section table {
+        display: flex;
+        justify-content: center;
+        font-size: 1vw;
+    }
+
+    article#sessao-about #faculdade section table td {
+        text-transform: uppercase;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0.7vw 2vw;
+        font-size: 1.5vw;
+        border: 1px solid white;
+        align-items: center;
+    }
+
+    article#sessao-about #faculdade section table tr:not(#info-tabela) td {
+        padding: 0.6vw 1.8vw;
+        font-size: 1.3vw;
+    }
+
+    article#sessao-about section td#progresso div {
+        text-align: right;
+        padding: 0.4vw;
+    }
+
+    article#sessao-about section td#progresso div {
+        height: max-content;
+        background-image: linear-gradient(to right, white 12.5%, rgba(0, 0, 0, 0) 12.5%);
+    }
+
+    td#progresso div span {
+        color: rgba(0, 0, 0, 0);
+    }
+
+    /* table faculdade animation */
+
+        article#sessao-about #faculdade section table td#progresso div:hover span {
+            color: rgba(255, 255, 255, 1);
+            transition: 0.1s;
+        }
+
+
+
     /* certificados */
 
 
@@ -229,10 +281,10 @@ article#sessao-about {
     }
 
     article#sessao-about section h5 {
-        margin: 0.5vw 0;
+        margin: 0.5vw 0 1vw;
     }
 
-    article#sessao-about section .certificado-info {
+    article#sessao-about section div {
         border: 1px solid white;
         font-family: monospace;
         padding: 1vw;
