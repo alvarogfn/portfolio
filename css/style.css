@@ -268,7 +268,32 @@ article#sessao-about {
             transition: 0.1s;
         }
 
+    /* trabalho */
 
+    #trabalho header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #trabalho header span {
+        font-size: 0.9vw;
+    }
+
+    #progress-bar {
+        background-image: linear-gradient(to right, white 0, rgba(0, 0, 0, 0) 0);
+        text-align: center;
+        font-size: 0.9vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #progress-bar span {
+        color: #ffffff00
+    }
+
+    #progress-bar:hover span {
+        color: #ffffff8c;
+    }
 
     /* certificados */
 
