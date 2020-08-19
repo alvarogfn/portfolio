@@ -561,3 +561,28 @@ article#sessao-contato table td.table-data a:hover {
     color: black;
     transition: 0.2s;
 }
+
+/*********          rodape-pagina          **********/
+
+footer#rodape-pagina {
+    font-family: "Sadana Square", 'Alata', monospace;
+    
+}
+footer#rodape-pagina div{
+    text-align: center;
+}
+
+footer#rodape-pagina p {
+    font-size: 1.3vw;
+    color: #ffffff;
+    padding: 0.5vw;
+    letter-spacing: 0.1vw;
+}
+
+footer#rodape-pagina a {
+    text-decoration: underline;
+}
+
+footer#rodape-pagina a:hover {
+    color: black;
+}
