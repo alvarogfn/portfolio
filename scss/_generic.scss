@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+// Importação de fontes internas.
+
+    @include importFont("blocked", "Blocked");
+    // font-family: "Blocked";
+
+    @include importFont("Gamer", "Gamer");
+    // font-family: "Gamer";
+
+    @include importFont("SadanaSquare", "Sadana Square");
+    // font-family: "Sadana Square";
+
+// Importação de fontes externas.
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Square&display=swap');
+    // font-family: 'Major Mono Display', monospace;
+    // font-family: 'Nova Square', cursive;

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Square&display=swap");
+@keyframes keyframes {}* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Blocked";
+  font-weight: normal;
+  src: url("../fonts/blocked.eot") format("eot"), url("../fonts/blocked.otf") format("otf"), url("../fonts/blocked.ttf") format("ttf"), url("../fonts/blocked.woff") format("woff"), url("../fonts/blocked.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gamer";
+  font-weight: normal;
+  src: url("../fonts/Gamer.eot") format("eot"), url("../fonts/Gamer.otf") format("otf"), url("../fonts/Gamer.ttf") format("ttf"), url("../fonts/Gamer.woff") format("woff"), url("../fonts/Gamer.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Sadana Square";
+  font-weight: normal;
+  src: url("../fonts/SadanaSquare.eot") format("eot"), url("../fonts/SadanaSquare.otf") format("otf"), url("../fonts/SadanaSquare.ttf") format("ttf"), url("../fonts/SadanaSquare.woff") format("woff"), url("../fonts/SadanaSquare.woff2") format("woff2");
+}
+
+body {
+  background-color: #0D0D0D;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Gamer', serif;
+  text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Sadana Square', monospace;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Nova Square', sans-serif;
+}
+
+a, li {
+  font-family: 'Blocked', monospace;
+  text-transform: uppercase;
+}
+
+button {
+  font-family: 'Sadana Square', monospace;
+  text-transform: uppercase;
+}
+
+div, span {
+  font-family: 'Sadana Square';
+}

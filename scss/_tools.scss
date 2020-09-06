@@ -1,0 +1,27 @@
+// Inicio dos Mixins
+        @mixin importFont($name, $font-family) {
+                @font-face {
+                        // Importa fontes com as extensões eot, otf, ttf, woff e woff2.
+                        // São importadas da pasta raiz fonts.
+                        // É necessário que todas as fontes iguais tenham o mesmo nome.
+                                // Ex: font.ext, font.otf...
+                        //Retorna a familia da fonte o definido em "font-family".
+
+                        font-family: $font-family;
+                        font-weight: normal;
+
+                        src: url("../fonts/#{$name}.eot") format("eot"),
+                                url("../fonts/#{$name}.otf") format("otf"),
+                                url("../fonts/#{$name}.ttf") format("ttf"),
+                                url("../fonts/#{$name}.woff") format("woff"),
+                                url("../fonts/#{$name}.woff2") format("woff2");
+                }
+        }
+        
+// Inicio das funções
+        @function function() {
+        }
+
+// Inicio das animações
+        @keyframes keyframes {
+        }

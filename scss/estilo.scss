@@ -1,0 +1,23 @@
+// Aqui é onde todos os arquivos da piramide se encontram.
+// São postos em ordem de especificidade.
+
+// Todas as variáveis principais vem aqui \\ $variables...
+    @import '_settings';
+
+// Todas as funções e mixins vem aqui \\ @functions... ; @mixins...
+    @import '_tools';
+
+// Todas as configurações genericas vem aqui \\ seletor " * " e resets... 
+    @import '_generic';
+
+// Todas as estilizações base em aqui \\ tags: <body> ; <h1> ; ...
+    @import '_elements';
+
+// Todos os blocos [ BEM ] vem aqui \\ .bloco
+    @import '_objects';
+
+// Todos os elementos [ BEM ] vem aqui \\  &__elemento
+    @import '_components';
+
+//Todos os modificadores [ BEM ] vem aqui \\ &--elemento
+    @import '_trumps'
