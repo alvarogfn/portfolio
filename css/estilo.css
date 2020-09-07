@@ -104,7 +104,7 @@ div, span {
 
 .cabecalho__lista--link {
   display: block;
-  margin: 1em 1em;
+  margin: -0.1em 1em;
   padding: 1em;
 }
 
@@ -201,7 +201,7 @@ div, span {
 
 .sobre-mim__corpo--imagem, .faculdade__corpo--imagem, .habilidades__corpo--imagem {
   border: 0.5em solid #6805F2;
-  box-shadow: 0.4em 0.4em 0.3em #0F0140;
+  box-shadow: 0em 0em 0.2em #0F0140;
 }
 
 .sobre-mim__corpo--item, .faculdade__corpo--item, .habilidades__corpo--item {
@@ -290,4 +290,13 @@ div, span {
 .sobre-mim__corpo--texto {
   text-indent: 1.5em;
   color: #310273;
+}
+
+@media screen and (orientation: landscape), (max-width: 712px) {
+  .sobre-mim__corpo--imagem {
+    transition: 400ms;
+  }
+  .sobre-mim__corpo--imagem:hover {
+    transform: scale(1.5);
+  }
 }
