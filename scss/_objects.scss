@@ -19,22 +19,31 @@
     }
 
     &__lista {
+        display: flex;
 
         width: max-content;
         
         margin-right: 5%; // Arruma o posicinamento horizontal do menu no topo
-        @media screen and (orientation: portrait) and (max-width: 425px) {
-            margin-right: 0;
-        }
 
         // Celular menor que 768px em modo portatil
-        display: flex;
+
         @media screen and (orientation: portrait) and (max-width: 768px) {
             flex-direction: column;
+            justify-content: center;
+
+            height: 100vh; 
+
+            margin: 0 auto;
         }
+
         // Celular menor que 425px em modo retrato
         @media screen and (orientation: landscape) and (max-width: 712px) {
             flex-direction: column;
+            justify-content: center;
+
+            height: 100vh;
+
+            margin: 0 auto;
         }
 
         &--link {
@@ -43,7 +52,7 @@
             // Celular menor que 768px
             margin: 0 1em;
             padding: 1em;
-            
+
             @media screen and (orientation: portrait) and (max-width: 768px) {
                 margin: 0 0;
             }
@@ -52,7 +61,17 @@
 }
 
 .principal {
-    border: 1px solid red;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
+
+    &__sobre-mim, &__faculdade, &__habilidades {
+        border: 1vh solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
 }

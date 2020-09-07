@@ -82,26 +82,26 @@ div, span {
 }
 
 .cabecalho__lista {
+  display: flex;
   width: max-content;
   margin-right: 5%;
-  display: flex;
-}
-
-@media screen and (orientation: portrait) and (max-width: 425px) {
-  .cabecalho__lista {
-    margin-right: 0;
-  }
 }
 
 @media screen and (orientation: portrait) and (max-width: 768px) {
   .cabecalho__lista {
     flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
   }
 }
 
 @media screen and (orientation: landscape) and (max-width: 712px) {
   .cabecalho__lista {
     flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
   }
 }
 
@@ -118,9 +118,19 @@ div, span {
 }
 
 .principal {
-  border: 1px solid red;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
+}
+
+.principal__sobre-mim, .principal__faculdade, .principal__habilidades {
+  border: 1vh solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .cabecalho__titulo {
@@ -170,6 +180,22 @@ div, span {
   letter-spacing: 0.05em;
   font-size: 1.9em;
   padding-left: 3%;
+}
+
+.cabecalho__lista {
+  position: fixed;
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .cabecalho__lista {
+    position: static;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 712px) {
+  .cabecalho__lista {
+    position: static;
+  }
 }
 
 .cabecalho__lista--item {
