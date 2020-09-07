@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-ul, li, a {
-  list-style: none;
-  text-decoration: none;
-  color: white;
-}
-
 @font-face {
   font-family: "Blocked";
   font-weight: normal;
@@ -51,6 +45,9 @@ p {
 a, li {
   font-family: 'Blocked', monospace;
   text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  color: white;
 }
 
 button {
@@ -107,30 +104,61 @@ div, span {
 
 .cabecalho__lista--link {
   display: block;
-  margin: 0 1em;
+  margin: 1em 1em;
   padding: 1em;
 }
 
 @media screen and (orientation: portrait) and (max-width: 768px) {
   .cabecalho__lista--link {
-    margin: 0 0;
+    margin: 2em 0;
   }
 }
 
 .principal {
   width: 85%;
-  margin: 0 auto;
+  margin: 4em auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .principal {
+    width: 70%;
+  }
 }
 
 .principal__sobre-mim, .principal__faculdade, .principal__habilidades {
-  border: 1vh solid red;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
+}
+
+.sobre-mim__corpo, .faculdade__corpo, .habilidades__corpo {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .sobre-mim__corpo, .faculdade__corpo, .habilidades__corpo {
+    flex-direction: column;
+  }
+}
+
+.sobre-mim__corpo--conteudo {
+  margin-left: 0.5em;
+}
+
+.sobre-mim__corpo--imagem {
+  width: 13em;
+  height: 15em;
+  box-sizing: border-box;
+}
+
+.sobre-mim__corpo--item {
+  margin: 0.2em 0;
+  padding: 0.1em 0.2em;
 }
 
 .cabecalho__titulo {
@@ -155,6 +183,38 @@ div, span {
 @media screen and (orientation: landscape) and (max-width: 712px) {
   .cabecalho__lista--link {
     text-align: center;
+  }
+}
+
+.sobre-mim__cabecalho, .faculdade__cabecalho, .habilidades__cabecalho {
+  font-size: 2em;
+  letter-spacing: 0.5em;
+  text-shadow: 0.1em 0.1em 0 #6805F2;
+}
+
+@media screen and (orientation: portrait) and (max-width: 440px) {
+  .sobre-mim__cabecalho--titulo, .faculdade__cabecalho--titulo, .habilidades__cabecalho--titulo {
+    letter-spacing: 0.1em;
+    font-size: 1.7em;
+  }
+}
+
+.sobre-mim__corpo--imagem, .faculdade__corpo--imagem, .habilidades__corpo--imagem {
+  border: 0.5em solid #6805F2;
+  box-shadow: 0.4em 0.4em 0.3em #0F0140;
+}
+
+.sobre-mim__corpo--item, .faculdade__corpo--item, .habilidades__corpo--item {
+  background-color: #6805F2;
+  border: 0.1em solid #310273;
+  box-shadow: 0 0 0.4em #0F0140;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .sobre-mim__corpo--item, .faculdade__corpo--item, .habilidades__corpo--item {
+    line-height: 2em;
   }
 }
 
@@ -201,4 +261,33 @@ div, span {
 .cabecalho__lista--item {
   font-size: 1.3em;
   letter-spacing: 0.1em;
+}
+
+.sobre-mim__corpo--title {
+  font-size: 1.7em;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+
+@media screen and (min-width: 768px) {
+  .sobre-mim__corpo--title {
+    font-size: 2em;
+  }
+}
+
+.sobre-mim__corpo--embelezador {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobre-mim__corpo--embelezador .sobre-mim__corpo--item {
+  flex-basis: 47%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.sobre-mim__corpo--texto {
+  text-indent: 1.5em;
+  color: #310273;
 }

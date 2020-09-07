@@ -16,7 +16,6 @@
             background: linear-gradient(180deg, 
                 $paleta1-color-2 0%, 
                 $paleta1-color-1 100%);
-
             border: 0.1em solid $paleta1-color-4;
             box-shadow: 0em 0em 0.3em $paleta1-color-4;
 
@@ -25,6 +24,46 @@
             }
             @media screen and (orientation: landscape) and (max-width: 712px) {
                 text-align: center;
+            }
+        }
+    }
+}
+
+.sobre-mim, .faculdade, .habilidades {
+    &__cabecalho {
+
+        font-size: 2em;
+        letter-spacing: 0.5em;
+
+        text-shadow: 0.1em 0.1em 0 $paleta1-color-1;
+
+        &--titulo {
+            @media screen and (orientation: portrait) and (max-width: 440px) {
+                letter-spacing: 0.1em;
+                font-size: 1.7em;
+                // Define um tamanho menor para a fonte não quebrar o width do elemento.
+            }
+        }
+
+    }
+    &__corpo {
+
+        &--imagem {
+            border: 0.5em solid $paleta1-color-1;
+            box-shadow: 0.4em 0.4em 0.3em $paleta1-color-3;
+        }
+
+        &--item {
+            background-color: $paleta1-color-1;
+
+            border: 0.1em solid $paleta1-color-2;
+            box-shadow: 0 0 0.4em $paleta1-color-3;
+
+            font-size: 1.2em;
+            line-height: 1.5em;
+            
+            @media screen and (min-width: 1024px) { // garante mais espaço em telas maiores que 1024px
+                line-height: 2em;
             }
         }
     }

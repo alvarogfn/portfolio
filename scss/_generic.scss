@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-ul, li, a {
-    list-style: none;
-    text-decoration: none;
-    color: white;
-}
-
 // Importação de fontes internas.
 
     @include importFont("blocked", "Blocked");

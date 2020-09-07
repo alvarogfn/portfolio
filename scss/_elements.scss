@@ -21,6 +21,9 @@ p {
 a, li {
     font-family: 'Blocked', monospace;
     text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
 button {
