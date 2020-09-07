@@ -1,2 +1,20 @@
 .cabecalho {
+    
+    &__topicos {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__lista {
+        display: flex;
+        
+        // Celular menor que 768px
+        @media screen and (orientation: portrait) and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        &--link {
+            display: block;
+        }
+    }
 }
