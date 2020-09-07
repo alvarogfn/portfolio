@@ -4,41 +4,14 @@
         $paleta1-color-2 0%, 
         $paleta1-color-1 100%);
 
-        width: max-content;
-        height: max-content;
-        
-
         text-align: center;
-
-        padding: 0.3em 1em 0.3em 0.9em;
 
         border: 0.1em solid $paleta1-color-4;
         box-shadow: 0em 0em 0.3em $paleta1-color-4;
-
-        &--nome {
-            margin: 0;
-        }
-        &--cargo {
-            margin: 0;
-        }
     }
 
     &__lista {
-        width: max-content;
-        margin-right: 5%; // Arruma o posicinamento horizontal do menu no topo
-        @media screen and (orientation: portrait) and (max-width: 425px) {
-            margin-right: 0;
-        }
-        
         &--link {
-            display: block;
-
-            // Celular menor que 768px
-            margin: 0 1em;
-
-            @media screen and (orientation: portrait) and (max-width: 768px) {
-                margin: 0 0;
-            }
 
             background: linear-gradient(180deg, 
                 $paleta1-color-2 0%, 
@@ -46,8 +19,6 @@
 
             border: 0.1em solid $paleta1-color-4;
             box-shadow: 0em 0em 0.3em $paleta1-color-4;
-
-            padding: 1em;
         }
     }
 }

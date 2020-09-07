@@ -1,20 +1,58 @@
 .cabecalho {
-    
+    &__titulo {
+        width: max-content;
+        height: max-content;
+
+        padding: 0.3em 1em 0.3em 0.9em;
+
+        &--nome {
+            margin: 0;
+        }
+        &--cargo {
+            margin: 0;
+        }
+
+    }
     &__topicos {
         display: flex;
         justify-content: flex-end;
     }
 
     &__lista {
-        display: flex;
+
+        width: max-content;
         
-        // Celular menor que 768px
+        margin-right: 5%; // Arruma o posicinamento horizontal do menu no topo
+        @media screen and (orientation: portrait) and (max-width: 425px) {
+            margin-right: 0;
+        }
+
+        // Celular menor que 768px em modo portatil
+        display: flex;
         @media screen and (orientation: portrait) and (max-width: 768px) {
+            flex-direction: column;
+        }
+        // Celular menor que 425px em modo retrato
+        @media screen and (orientation: landscape) and (max-width: 712px) {
             flex-direction: column;
         }
 
         &--link {
             display: block;
+
+            // Celular menor que 768px
+            margin: 0 1em;
+            padding: 1em;
+            
+            @media screen and (orientation: portrait) and (max-width: 768px) {
+                margin: 0 0;
+            }
         }
     }
+}
+
+.principal {
+    border: 1px solid red;
+    width: 90%;
+    margin: 0 auto;
 }

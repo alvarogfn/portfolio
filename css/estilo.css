@@ -62,33 +62,10 @@ div, span {
   font-family: 'Sadana Square';
 }
 
-.cabecalho__topicos {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cabecalho__lista {
-  display: flex;
-}
-
-@media screen and (orientation: portrait) and (max-width: 768px) {
-  .cabecalho__lista {
-    flex-direction: column;
-  }
-}
-
-.cabecalho__lista--link {
-  display: block;
-}
-
 .cabecalho__titulo {
-  background: linear-gradient(90deg, #310273 0%, #6805F2 100%);
   width: max-content;
   height: max-content;
-  text-align: center;
   padding: 0.3em 1em 0.3em 0.9em;
-  border: 0.1em solid #090126;
-  box-shadow: 0em 0em 0.3em #090126;
 }
 
 .cabecalho__titulo--nome {
@@ -99,9 +76,15 @@ div, span {
   margin: 0;
 }
 
+.cabecalho__topicos {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .cabecalho__lista {
   width: max-content;
   margin-right: 5%;
+  display: flex;
 }
 
 @media screen and (orientation: portrait) and (max-width: 425px) {
@@ -110,12 +93,21 @@ div, span {
   }
 }
 
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .cabecalho__lista {
+    flex-direction: column;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 712px) {
+  .cabecalho__lista {
+    flex-direction: column;
+  }
+}
+
 .cabecalho__lista--link {
   display: block;
   margin: 0 1em;
-  background: linear-gradient(180deg, #310273 0%, #6805F2 100%);
-  border: 0.1em solid #090126;
-  box-shadow: 0em 0em 0.3em #090126;
   padding: 1em;
 }
 
@@ -123,6 +115,25 @@ div, span {
   .cabecalho__lista--link {
     margin: 0 0;
   }
+}
+
+.principal {
+  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cabecalho__titulo {
+  background: linear-gradient(90deg, #310273 0%, #6805F2 100%);
+  text-align: center;
+  border: 0.1em solid #090126;
+  box-shadow: 0em 0em 0.3em #090126;
+}
+
+.cabecalho__lista--link {
+  background: linear-gradient(180deg, #310273 0%, #6805F2 100%);
+  border: 0.1em solid #090126;
+  box-shadow: 0em 0em 0.3em #090126;
 }
 
 .cabecalho__titulo {
