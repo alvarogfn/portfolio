@@ -136,6 +136,18 @@ div, span {
   box-shadow: 0em 0em 0.3em #090126;
 }
 
+@media screen and (orientation: portrait) and (max-width: 768px) {
+  .cabecalho__lista--link {
+    text-align: center;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 712px) {
+  .cabecalho__lista--link {
+    text-align: center;
+  }
+}
+
 .cabecalho__titulo {
   position: fixed;
   top: 1em;
