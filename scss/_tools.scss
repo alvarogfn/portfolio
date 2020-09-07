@@ -19,7 +19,8 @@
         }
         
 // Inicio das funções
-        @function function() {
+        @function FromPixelToEm($pixel, $contexto) {
+                @return ($pixel / $contexto) * 1em;
         }
 
 // Inicio das animações

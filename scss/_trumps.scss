@@ -1,0 +1,33 @@
+.cabecalho {
+
+    &__titulo {
+        position: fixed;
+
+        top: 1em;
+
+        // Efeito transição lateral
+        transition: 400ms;
+
+        left: -17.8em;
+        &:hover {
+            left: -1em;
+        }
+        //
+
+        // Ajustes pontuais para manter a responsividade e
+        // deixar o botão superior lateral com uma aparencia agradavel.
+        &--nome {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 3em;
+            letter-spacing: 0.2em;
+            margin-right: -5%;
+        }
+
+        &--cargo {
+            letter-spacing: 0.05em;
+            font-size: 1.9em;
+            padding-left: 3%;
+        }
+        //
+    }
+}

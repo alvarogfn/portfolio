@@ -13,11 +13,11 @@
 // Todas as estilizações base em aqui \\ tags: <body> ; <h1> ; ...
     @import '_elements';
 
-// Todos os blocos [ BEM ] vem aqui \\ .bloco
-    @import '_objects';
+// Todos os  objetos vem aqui \\ estilizações básicas: definir margens, padding, ...
+    @import '_objects'; // permitido somente classes
 
-// Todos os elementos [ BEM ] vem aqui \\  &__elemento
-    @import '_components';
+// Todos os componentes vem aqui \\ estilizações medianas: backgrounds e tamanhos 
+    @import '_components'; // permitido somente classes
 
-//Todos os modificadores [ BEM ] vem aqui \\ &--elemento
-    @import '_trumps'
+//Todos os quebra-galhos vem aqui \\ estilizações estritas: !important
+    @import '_trumps' // permitido uso de ID e CLASSES.
