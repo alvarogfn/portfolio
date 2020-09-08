@@ -1,3 +1,4 @@
+//  cabecalho
 .cabecalho { // garante um cabecalho preso ou flexivel
 
     &__titulo {
@@ -47,7 +48,9 @@
         }
     }
 }
+//
 
+// corpo
 .sobre-mim__corpo--title { // Modificações esteticas do subtitulo
     font-size: 1.7em;
 
@@ -111,7 +114,7 @@
     }
 }
 
-// Regra para geração de barras de progresso
+// Regra para geração de barras de progresso na sessao habilidades
 @each $skill in $skills {
     .progress-bar--#{nth($skill, 1)} {
         background-color: $paleta1-color-3;
@@ -120,4 +123,34 @@
         line-height: 1.5em;
         text-align: right;
     }
+}
+//
+//
+
+// redes sociais
+.redes-sociais {
+    &__link {
+        position: relative;
+        bottom: -6em;
+
+        transition: bottom 400ms;
+        &:hover {
+            bottom: -3em;
+
+            .redes-sociais__link--item {
+                bottom: 0;
+            }
+        }
+
+    &--item {
+        position: relative;
+        bottom: -4em;
+        transition: bottom 400ms;
+    }
+    }
+}
+//
+
+.rodape {
+    position: relative;
 }

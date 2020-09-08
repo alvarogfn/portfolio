@@ -1,3 +1,4 @@
+// cabecalho
 .cabecalho {
     &__titulo {
         width: max-content;
@@ -64,7 +65,9 @@
         }
     }
 }
+//
 
+// corpo
 .principal {
     width: 85%;
 
@@ -147,7 +150,7 @@
 
     &--secao {
         padding: 0.5em;
-        @media screen and (orientation: portrait) and (max-width: 357px){
+        @media screen and (orientation: portrait) and (max-width: 395px){
             flex-grow: 1;
         }
     }
@@ -162,7 +165,7 @@
         width: 15em;
         margin: 0.5em 2em;
 
-        @media screen and (orientation: portrait) and (max-width: 357px) {
+        @media screen and (orientation: portrait) and (max-width: 395px) {
             width: 90%;
             margin: 0.5em auto;
         }
@@ -172,3 +175,44 @@
 .progress-bar {
     width: 12.5%;
 }
+//
+
+// redes sociais
+.redes-sociais {
+    margin-top: 4em;
+
+    &__lista {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__link {
+        height: 6em;
+    
+        margin: 0 1em;
+        padding: 0.5em;
+
+        &--item {
+            height: min-content;
+        }
+    }
+}
+
+.icon-social {
+    width: 40px;
+    height: 40px;
+}
+//
+
+// rodape
+.rodape {
+    
+    height: 8em;
+
+    // garante que os itens fiquem ao centro//centro do rodape
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+//

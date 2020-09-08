@@ -200,7 +200,7 @@ div, span {
   padding: 0.5em;
 }
 
-@media screen and (orientation: portrait) and (max-width: 357px) {
+@media screen and (orientation: portrait) and (max-width: 395px) {
   .habilidades__corpo--secao {
     flex-grow: 1;
   }
@@ -217,7 +217,7 @@ div, span {
   margin: 0.5em 2em;
 }
 
-@media screen and (orientation: portrait) and (max-width: 357px) {
+@media screen and (orientation: portrait) and (max-width: 395px) {
   .habilidades__corpo--item {
     width: 90%;
     margin: 0.5em auto;
@@ -226,6 +226,38 @@ div, span {
 
 .progress-bar {
   width: 12.5%;
+}
+
+.redes-sociais {
+  margin-top: 4em;
+}
+
+.redes-sociais__lista {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.redes-sociais__link {
+  height: 6em;
+  margin: 0 1em;
+  padding: 0.5em;
+}
+
+.redes-sociais__link--item {
+  height: min-content;
+}
+
+.icon-social {
+  width: 40px;
+  height: 40px;
+}
+
+.rodape {
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cabecalho__titulo {
@@ -310,6 +342,39 @@ div, span {
   .progress-bar:hover {
     color: #6805F2;
   }
+}
+
+.rodape {
+  background-color: #0F0140;
+  box-shadow: -1em 0 1em #090126;
+}
+
+.rodape__titulo {
+  font-family: 'Sadana Square', cursive;
+  font-size: 1.6em;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .rodape__titulo {
+    font-size: 1.6em;
+  }
+}
+
+.redes-sociais__link {
+  background-color: #6805F2;
+  border: 0.1em solid #0F0140;
+  box-shadow: 0em 0em 0.2em #0F0140;
+}
+
+.icon-social {
+  box-shadow: 0em 0em 0.3em #0F0140;
+  border-radius: 5%;
+}
+
+.icon-social--circle {
+  border-radius: 50%;
 }
 
 .cabecalho__titulo {
@@ -455,4 +520,28 @@ div, span {
   font-size: 0.9em;
   line-height: 1.5em;
   text-align: right;
+}
+
+.redes-sociais__link {
+  position: relative;
+  bottom: -6em;
+  transition: bottom 400ms;
+}
+
+.redes-sociais__link:hover {
+  bottom: -3em;
+}
+
+.redes-sociais__link:hover .redes-sociais__link--item {
+  bottom: 0;
+}
+
+.redes-sociais__link--item {
+  position: relative;
+  bottom: -4em;
+  transition: bottom 400ms;
+}
+
+.rodape {
+  position: relative;
 }
