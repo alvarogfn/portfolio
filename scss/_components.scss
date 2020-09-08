@@ -68,3 +68,40 @@
         }
     }
 }
+
+.faculdade__corpo {
+    
+    &--progressbar {
+    text-align: left;
+    }
+
+    &--item {
+        text-align: center;
+        letter-spacing: 0.3em;
+    }
+}
+
+.progress-bar {
+    
+    text-indent: 120%;
+
+    @media screen and (min-width: 712px) { // garante uma melhor visualização da legenda em telas maiores
+        color: $paleta1-color-4;
+
+        transition: color 200ms;
+
+        line-height: 1em;
+
+        text-indent: 0;
+    
+        &:hover {
+            color: $paleta1-color-1;
+        }
+    }
+
+    font-size: 100%;
+
+    background-color: $paleta1-color-4;
+    
+    width: 12.5%;
+}

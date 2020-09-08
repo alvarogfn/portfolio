@@ -114,3 +114,21 @@
         padding: 0.1em 0.2em;
     }
 }
+
+.faculdade__corpo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    &--title {
+        flex-basis: 70%;
+    }
+    &--item {
+        flex-grow: 1;
+        padding: 0.3em;
+        margin: 0.2em;
+    }
+}
+
+.progress-bar {
+    width: 12.5%;
+}

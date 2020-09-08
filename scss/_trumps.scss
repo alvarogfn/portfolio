@@ -86,3 +86,27 @@
         }
     }
 }
+
+.sobre-mim, .faculdade {
+    &__corpo {
+        &--title {
+            font-size: 1.7em;
+
+            @media screen and (min-width: 768px) { // garante uma melhor visualização do titulo em telas maiores
+                font-size: 2em;
+            }
+        
+            text-align: center;
+            letter-spacing: 0.3em;
+        }
+    }
+}
+
+.faculdade__corpo {
+    &--title {
+        flex-basis: 70%;
+        @media screen and (max-width: 1024px) { // garante uma melhor visualização do titulo em telas maiores
+           letter-spacing: 0.1em;
+        }
+    }
+}
