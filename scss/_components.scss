@@ -69,15 +69,16 @@
     }
 }
 
-.faculdade__corpo {
-    
-    &--progressbar {
-    text-align: left;
-    }
+.faculdade, .habilidades {
+    &__corpo{
+        &--progressbar {
+        text-align: left;
+        }
 
-    &--item {
-        text-align: center;
-        letter-spacing: 0.3em;
+        &--item {
+            text-align: center;
+            letter-spacing: 0.3em;
+        }
     }
 }
 
@@ -102,6 +103,4 @@
     font-size: 100%;
 
     background-color: $paleta1-color-4;
-    
-    width: 12.5%;
 }

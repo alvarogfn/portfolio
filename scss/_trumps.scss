@@ -87,7 +87,7 @@
     }
 }
 
-.sobre-mim, .faculdade {
+.sobre-mim, .faculdade, .habilidades {
     &__corpo {
         &--title {
             font-size: 1.7em;
@@ -108,5 +108,16 @@
         @media screen and (max-width: 1024px) { // garante uma melhor visualização do titulo em telas maiores
            letter-spacing: 0.1em;
         }
+    }
+}
+
+// Regra para geração de barras de progresso
+@each $skill in $skills {
+    .progress-bar--#{nth($skill, 1)} {
+        background-color: $paleta1-color-3;
+        width: nth($skill, 2);
+        font-size: 0.9em;
+        line-height: 1.5em;
+        text-align: right;
     }
 }
