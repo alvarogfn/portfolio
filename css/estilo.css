@@ -114,9 +114,16 @@ div, span {
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .cabecalho__lista--link {
+    margin: 1em 0;
+  }
+}
+
 .principal {
   width: 85%;
-  margin: 4em auto;
+  margin: 0 auto;
+  margin-top: -8em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -131,8 +138,11 @@ div, span {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
+}
+
+.sobre-mim, .faculdade, .habilidades {
+  margin-top: 10em;
 }
 
 .sobre-mim__corpo, .faculdade__corpo, .habilidades__corpo {
@@ -190,6 +200,12 @@ div, span {
   padding: 0.5em;
 }
 
+@media screen and (orientation: portrait) and (max-width: 357px) {
+  .habilidades__corpo--secao {
+    flex-grow: 1;
+  }
+}
+
 .habilidades__corpo--title {
   padding: 20px;
   font-size: 0.5em;
@@ -199,6 +215,13 @@ div, span {
   padding: 0.2em;
   width: 15em;
   margin: 0.5em 2em;
+}
+
+@media screen and (orientation: portrait) and (max-width: 357px) {
+  .habilidades__corpo--item {
+    width: 90%;
+    margin: 0.5em auto;
+  }
 }
 
 .progress-bar {
