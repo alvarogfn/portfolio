@@ -3,14 +3,15 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "prepare": "husky install",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "commit": "git-cz",
+    "dev": "nuxt dev",
+    "format": "prettier --write .",
+    "generate": "nuxt generate",
     "lint": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint . -c eslint.config.mjs",
-    "format": "prettier --write ."
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck"
   },
   "config": {
     "commitizen": {
@@ -18,7 +19,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,cjs,mjs,jsx,tsx}": [
+    "*.{js,ts,cjs,mjs,jsx,tsx,vue}": [
       "cross-env ESLINT_USE_FLAT_CONFIG=true eslint -c eslint.config.mjs",
       "prettier --write"
     ],
@@ -54,6 +55,7 @@
     "lint-staged": "^14.0.1",
     "nuxt": "^3.7.0",
     "prettier": "3.0.2",
+    "sass": "^1.66.1",
     "typescript": "5.2.2",
     "vue-eslint-parser": "^9.3.1"
   }

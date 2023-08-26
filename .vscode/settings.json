@@ -1,33 +1,36 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "vue.complete.casing.props": "kebab",
-  "vue.complete.casing.tags": "kebab",
-  "vue.autoInsert.bracketSpacing": true,
-  "vue.inlayHints.missingProps": true,
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.options": {
-    "overrideConfigFile": "eslint.config.mjs"
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.options": {
+    "overrideConfigFile": "eslint.config.mjs"
+  },
   "eslint.validate": ["javascript"],
-  "vue.inlayHints.inlineHandlerLeading": true,
-  "volar.format.initialIndent": {
-    "html": true,
-    "typescript": true,
-    "css": true,
-    "javascript": true
-  },
   "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.nuxt": true,
+    "**/.svn": true,
+    "**/CVS": true,
     "**/node_modules": true,
-    "**/.nuxt": true
+    "**/Thumbs.db": true
   },
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "volar.format.initialIndent": {
+    "css": true,
+    "html": true,
+    "javascript": true,
+    "typescript": true
+  },
+  "vue.autoInsert.bracketSpacing": true,
+  "vue.complete.casing.props": "kebab",
+  "vue.complete.casing.tags": "kebab",
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "vue.inlayHints.missingProps": true
 }

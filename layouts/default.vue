@@ -1,5 +1,4 @@
 <script setup>
-  const route = useRoute();
   const { t } = useI18n();
 
   const head = useLocaleHead({
@@ -8,9 +7,7 @@
     addSeoAttributes: true,
   });
 
-  const title = computed(() =>
-    t("page.title", { title: t(route.meta.title ?? "TBD") }),
-  );
+  const title = computed(() => t("page.title"));
 </script>
 
 <template>
