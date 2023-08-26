@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Vue.vscode-typescript-vue-plugin",
+    "Vue.volar",
+    "sdras.vue-vscode-snippets"
+  ],
+  "unwantedRecommendations": ["vscode.typescript-language-features"]
+}

@@ -1,0 +1,25 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "vue.complete.casing.props": "kebab",
+  "vue.complete.casing.tags": "kebab",
+  "vue.autoInsert.bracketSpacing": true,
+  "vue.inlayHints.missingProps": true,
+  "eslint.experimental.useFlatConfig": true,
+  "eslint.options": {
+    "overrideConfigFile": "eslint.config.mjs"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "volar.format.initialIndent": {
+    "html": true,
+    "typescript": true,
+    "css": true,
+    "javascript": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  }
+}
