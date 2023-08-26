@@ -2,7 +2,6 @@ import eslintPluginProperArrows from "@getify/eslint-plugin-proper-arrows";
 import eslintPluginTypescript from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import eslintConfigPrettier from "eslint-config-prettier";
-import eslintConfigStandartWithTypescript from "eslint-config-standard-with-typescript";
 import { defineFlatConfig } from "eslint-define-config";
 import eslintPluginArrayFunc from "eslint-plugin-array-func";
 import eslintPluginImport from "eslint-plugin-import";
@@ -41,7 +40,6 @@ export default defineFlatConfig([
       "@typescript-eslint": eslintPluginTypescript,
     },
     rules: {
-      ...eslintConfigStandartWithTypescript.rules,
       ...eslintPluginTypescript.configs["recommended"].rules,
     },
   },
@@ -92,14 +90,8 @@ export default defineFlatConfig([
   },
   {
     files: ["*"],
-    plugins: {
-      prettier: eslintPluginPrettier,
-    },
     rules: {
       ...eslintConfigPrettier.rules,
-      "arrow-body-style": "off",
-      "prefer-arrow-callback": "off",
-      "prettier/prettier": "error",
     },
   },
 ]);

@@ -19,7 +19,15 @@
     "css": true,
     "javascript": true
   },
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
-  }
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.nuxt": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
