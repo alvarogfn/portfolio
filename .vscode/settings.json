@@ -6,11 +6,7 @@
     "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.experimental.useFlatConfig": true,
-  "eslint.options": {
-    "overrideConfigFile": "eslint.config.mjs"
-  },
-  "eslint.validate": ["javascript"],
+  "eslint.validate": ["javascript", "typescript", "vue"],
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -26,11 +22,22 @@
     "css": true,
     "html": true,
     "javascript": true,
-    "typescript": true
+    "typescript": true,
+    "scss": true,
+    "sass": true
   },
   "vue.autoInsert.bracketSpacing": true,
   "vue.complete.casing.props": "kebab",
   "vue.complete.casing.tags": "kebab",
   "vue.inlayHints.inlineHandlerLeading": true,
-  "vue.inlayHints.missingProps": true
+  "vue.inlayHints.missingProps": true,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
 }

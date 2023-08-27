@@ -1,40 +1,33 @@
-<script setup>
-  const { t } = useI18n();
-
-  const head = useLocaleHead({
-    addDirAttribute: true,
-    identifierAttribute: "id",
-    addSeoAttributes: true,
-  });
-
-  const title = computed(() => t("page.title"));
-</script>
-
 <template>
-  <div>
-    <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
-      <Head>
-        <Title>{{ title }}</Title>
-        <template v-for="link in head.link" :key="link.id">
-          <Link
-            :id="link.id"
-            :rel="link.rel"
-            :href="link.href"
-            :hreflang="link.hreflang"
-          />
-        </template>
-        <template v-for="meta in head.meta" :key="meta.id">
-          <Meta
-            :id="meta.id"
-            :property="meta.property"
-            :content="meta.content"
-          />
-        </template>
-      </Head>
-
-      <Body>
-        <slot />
-      </Body>
-    </Html>
+  <div class="container">
+    <top-menu />
+    <nav class="superior-menu"></nav>
+    <div class="content">
+      <slot></slot>
+    </div>
   </div>
 </template>
+
+<script setup lang="ts"></script>
+
+<style lang="scss" scoped>
+  .content {
+  }
+
+  .container {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  .top-menu {
+    left: 0;
+    right: 0;
+  }
+
+  .lateral-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+</style>
