@@ -26,6 +26,8 @@ export default defineFlatConfig([
       ".prettierignore",
       "*.json",
       "README.md",
+      ".output",
+      "dist",
     ],
   },
   {
