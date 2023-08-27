@@ -1,0 +1,9 @@
+[build]
+command = "pnpm run generate"
+publish = "dist"
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [[plugins.inputs.audits]]
+    path = "index.html"
