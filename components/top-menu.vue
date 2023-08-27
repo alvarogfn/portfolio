@@ -1,14 +1,12 @@
 <template>
   <nav>
-    <ul>
-      <li
-        v-for="locale in availableLocales"
-        :key="(locale as LocaleObject).code"
-        :to="switchLocalePath((locale as LocaleObject).code)"
-      >
-        <nuxt-link />
-      </li>
-    </ul>
+    <nuxt-link
+      v-for="locale in availableLocales"
+      :key="locale.code"
+      :to="switchLocalePath(locale.code)"
+    >
+      {{ locale.name }}
+    </nuxt-link>
   </nav>
 </template>
 
@@ -18,15 +16,32 @@
   const { locale, locales } = useI18n();
   const switchLocalePath = useSwitchLocalePath();
 
-  const availableLocales = computed(() => {
+  const availableLocales = computed<LocaleObject[]>(() => {
     return locales.value.filter(
       (item) => (item as LocaleObject).code !== locale.value,
-    );
+    ) as LocaleObject[];
   });
 </script>
 
 <style lang="scss" scoped>
   nav {
-    height: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: start;
+  }
+
+  a {
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 2.5px;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+
+    transition: 200ms;
+
+    &:hover {
+      opacity: 0.9;
+    }
   }
 </style>

@@ -32,7 +32,7 @@
   "vue.inlayHints.inlineHandlerLeading": true,
   "vue.inlayHints.missingProps": true,
   "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"

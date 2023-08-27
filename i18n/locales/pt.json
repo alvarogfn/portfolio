@@ -1,6 +1,20 @@
 {
   "page": {
-    "title": "Portfólio de Álvaro"
+    "title": "Portfólio de Álvaro",
+    "description": "Sou desenvolvedor front-end e crio aplicações rápidas, acessíveis e bem posicionadas no Google, utilizando as melhores tecnologias do mercado, como JavaScript, React, Vue, Angular, Tailwind e outras. Tenho paixão por Open Source e gosto de participar de projetos que impactam positivamente a vida das pessoas."
   },
+  "about_me": {
+    "title": "Sobre mim",
+    "content": "Eu me chamo Álvaro Guimarães, nasci em Minas Gerais e sou formado em Sistemas de Informação, atualmente atuo no desenvolvimento de aplicações web com os frameworks React & Vue."
+  },
+  "work_experience": {
+    "title": "Experiência de Trabalho",
+    "content": ""
+  },
+  "academic_education": {
+    "title": "Formação Acadêmica"
+  },
+  "title": "Desenvolvedor front-end com os frameworks React, Angular e Vue.",
+  "currently": "atualmente",
   "hello_world": "Olá, mundo!"
 }

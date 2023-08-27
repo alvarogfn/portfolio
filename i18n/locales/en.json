@@ -1,6 +1,19 @@
 {
   "page": {
-    "title": "Alvaro's Portfolio"
+    "title": "Alvaro's Portfolio",
+    "description": "I am a front-end developer and I create fast, accessible, and well-positioned applications on Google, using the best technologies in the market, such as JavaScript, React, Vue, Angular, Tailwind, and others. I have a passion for Open Source and enjoy participating in projects that positively impact people's lives."
   },
+  "about_me": {
+    "title": "About me",
+    "content": ""
+  },
+  "work_experience": {
+    "title": "Work Experience"
+  },
+  "academic_education": {
+    "title": "Academic Education"
+  },
+  "title": "Front-end developer with React, Angular and Vue frameworks.",
+  "currently": "currently",
   "hello_world": "Hello, world!"
 }
