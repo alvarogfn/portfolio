@@ -29,6 +29,7 @@
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@getify/eslint-plugin-proper-arrows": "^11.0.3",
+    "@netlify/plugin-lighthouse": "^5.0.0",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxtjs/eslint-module": "^4.1.0",
