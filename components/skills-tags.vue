@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="tag in items" :key="tag">{{ tag }}</li>
+    <li v-for="tag in items" :key="tag" :title="tag">{{ tag }}</li>
   </ul>
 </template>
 
@@ -15,7 +15,7 @@
 <style lang="scss" scoped>
   ul {
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
     gap: 5px;
   }
 
@@ -24,5 +24,9 @@
     background-color: var(--secondary-color);
     padding: 2px;
     border-radius: 2px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 </style>

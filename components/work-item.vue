@@ -1,13 +1,16 @@
 <template>
-  <section>
-    <hash-title is="h3" id="ADM">
+  <section class="work-item">
+    <hash-title is="h3" :id="id">
       {{ title }}
     </hash-title>
+    <p class="work-item__period">
+      {{ date }}
+    </p>
     <p>
       {{ content }}
     </p>
-    <aside>
-      <tag-list :items="['Gestão de Planilhas']" />
+    <aside class="work-item__skills">
+      <skills-tags :items="skills" />
     </aside>
   </section>
 </template>
@@ -16,11 +19,23 @@
   interface Props {
     title: string;
     content: string;
-    startDate: Date;
-    endDate?: Date;
+    date: string;
+    id: string;
+    skills: string[];
   }
 
   defineProps<Props>();
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+  .work-item {
+    &__period {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin: 10px 0;
+    }
+    &__skills {
+      margin: 10px 0;
+    }
+  }
+</style>

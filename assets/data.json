@@ -2,10 +2,143 @@
   "pt": {
     "work": [
       {
-        "title": "",
-        "start": ""
+        "title": "Auxiliar Administrativo (Jovem Aprendiz) na ADM.",
+        "date": "Janeiro de 2021 à Março 2022",
+        "description": "Trabalhei como auxiliar administrativo com a função de arquivar e verificar erros em notas fiscais.",
+        "skills": ["Gestão de documentos", "Arquivamento", "Excel"],
+        "id": "ADM"
+      },
+      {
+        "title": "Estagiário de Desenvolvimento Front-end na Ilegra.",
+        "date": "Março de 2022 à Abril de 2023",
+        "description": "Participei do programa de jovens talentos recebendo mentoria técnica sobre diversas técnologias como React, Vue, Angular além de palestras e atividades com o próposito de desenvolvimento pessoal e soft skills.",
+        "skills": [
+          "React",
+          "Vue",
+          "Angular",
+          "GraphQL",
+          "React Native",
+          "SCSS",
+          "Integração oauth",
+          "Node.js",
+          "Javascript",
+          "Typescript",
+          "Jest",
+          "Jasmine & Karma",
+          "API's Restful",
+          "BFF (Back-end For Front-end)",
+          "Comunicação não violenta",
+          "Trabalho em Equipe",
+          "Testes automatizados"
+        ],
+        "id": "ILEGRA-EST"
+      },
+      {
+        "title": "Estagiário Interno de Manutenção de Computadores.",
+        "date": "Agosto de 2022 à Dezembro de 2023",
+        "description": "Trabalhei na manutenção, limpeza, análise e montagem de computadores no estágio interno da faculdade.",
+        "skills": [
+          "Manutenção de Computadores",
+          "Formatação de Computadores",
+          "Instalação de Sistemas Operacionais"
+        ],
+        "id": "ATENAS-MANCOM"
+      },
+      {
+        "title": "Estagiário Interno de Desenvolvimento.",
+        "date": "Fevereiro de 2023 à Junho de 2023",
+        "description": "Trabalhei na construção de Sistemas no estágio interno da faculdade.",
+        "skills": ["React", "Node.js", "Tailwind"],
+        "id": "ATENAS-DES"
+      },
+      {
+        "title": " Desenvolvedor Front-end Júnior na Ilegra@Nexti",
+        "date": "Atuando desde Abril de 2023",
+        "description": "Atuo como Desenvolvedor na construção do Design System Interno da Nexti.",
+        "skills": [
+          "React",
+          "Styled Components",
+          "Eslint",
+          "Jest",
+          "Typescript",
+          "Storybook",
+          "Design System"
+        ],
+        "id": "ILEGRA-JUN-NEXTI"
+      }
+    ],
+    "academic": [
+      {
+        "title": "Bacharel em Sistemas de Informação na UniAtenas",
+        "date": "Janeiro de 2021 à Março 2022",
+        "description": "Trabalhei como auxiliar administrativo com a função de arquivar e verificar erros em notas fiscais.",
+        "skills": ["Gestão de documentos", "Arquivamento", "Excel"],
+        "id": "ADM"
       }
     ]
   },
-  "en": {}
+  "en": {
+    "work": [
+      {
+        "title": "Auxiliar Administrativo (Jovem Aprendiz) na ADM.",
+        "date": "Janeiro de 2021 à Março 2022",
+        "description": "Trabalhei como auxiliar administrativo com a função de arquivar e verificar erros em notas fiscais.",
+        "skills": ["Gestão de documentos", "Arquivamento", "Excel"]
+      },
+      {
+        "title": "Estagiário de Desenvolvimento Front-end na Ilegra.",
+        "date": "Março de 2022 à Abril de 2023",
+        "description": "Participei do programa de jovens talentos recebendo mentoria técnica sobre diversas técnologias como React, Vue, Angular além de palestras e atividades com o próposito de desenvolvimento pessoal e soft skills.",
+        "skills": [
+          "React",
+          "Vue",
+          "Angular",
+          "GraphQL",
+          "React Native",
+          "SCSS",
+          "Integração oauth",
+          "Node.js",
+          "Javascript",
+          "Typescript",
+          "Jest",
+          "Jasmine & Karma",
+          "API's Restful",
+          "BFF (Back-end For Front-end)",
+          "Comunicação não violenta",
+          "Trabalho em Equipe",
+          "Testes automatizados"
+        ]
+      },
+      {
+        "title": "Estagiário Interno de Manutenção de Computadores.",
+        "date": "Agosto de 2022 à Dezembro de 2023",
+        "description": "Trabalhei na manutenção, limpeza, análise e montagem de computadores no estágio interno da faculdade.",
+        "skills": [
+          "Manutenção de Computadores",
+          "Formatação de Computadores",
+          "Instalação de Sistemas Operacionais"
+        ]
+      },
+      {
+        "title": "Estagiário Interno de Desenvolvimento.",
+        "date": "Fevereiro de 2023 à Junho de 2023",
+        "description": "Trabalhei na construção de Sistemas no estágio interno da faculdade.",
+        "skills": ["React", "Node.js", "Tailwind"]
+      },
+      {
+        "title": " Desenvolvedor Front-end Júnior na Ilegra@Nexti",
+        "date": "Atuando desde Abril de 2023",
+        "description": "Atuo como Desenvolvedor na construção do Design System Interno da Nexti.",
+        "skills": [
+          "React",
+          "Styled Components",
+          "Eslint",
+          "Jest",
+          "Typescript",
+          "Storybook",
+          "Design System"
+        ]
+      }
+    ]
+  }
 }
